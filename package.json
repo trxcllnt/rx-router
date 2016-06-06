@@ -1,6 +1,6 @@
 {
   "name": "rx-router",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "An Rx based http router",
   "author": "Joseph Moniz <joseph.moniz@gmail.com>",
   "main": "./src/index.js",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "existence": "1.0.*",
-    "rx-http-server": "trxcllnt/rx-http-server",
+    "rx-http-server": "0.2.0",
     "rxjs": ">=5.0.0-beta.8"
   },
   "devDependencies": {
