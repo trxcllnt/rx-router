@@ -1,20 +1,20 @@
-var Rx           = require("rx");
+var Rx           = require("rxjs");
 var RxHttpServer = require("rx-http-server");
 var router       = require("../src/index.js");
 
 var defaultHandler = function(data) {
     data.result = "no match found";
-    return Rx.Observable.fromArray([data]);
+    return Rx.Observable.from([data]);
 };
 
 var rootHandler = function(data) {
     data.result = "hello from root";
-    return Rx.Observable.fromArray([data]);
+    return Rx.Observable.from([data]);
 };
 
 var regexHandler = function(data) {
     data.result = "hello from regex";
-    return Rx.Observable.fromArray([data]);
+    return Rx.Observable.from([data]);
 };
 
 var server = new RxHttpServer();
