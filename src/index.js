@@ -1,4 +1,3 @@
-var Rx   = require("rxjs");
 var Some = require("existence/some");
 var None = require("existence/none");
 
